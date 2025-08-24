@@ -1,0 +1,14 @@
+<main class="main">
+  <div class="inner">
+    <% if user_signed_in? %>
+      <div class="greeting">
+        <h1><%= link_to "こんにちは#{current_user.username}さん", user_path(current_user) %></h1>
+      </div>
+    <% end %>
+    <div class="card__wrapper">
+      <%# 投稿がある場合は、以下のようにプロトタイプごとに表示されるようにしましょう %>
+      <%= render partial: "prototype", collection: @prototypes %> <%# STEP48 %>
+      <%# // 投稿がある場合は、上記を記述しましょう %>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,12 @@
+<!-- app/views/layouts/_header.html.erb -->
+
+<header class="header">
+  <div class="header__logo">
+    <%= link_to "Protospace", root_path %>
+  </div>
+
+  <div class="header__nav">
+    <%= link_to "", new_user_registration_path, class: "header__nav__btn" %>
+    <%= link_to "ログイン", new_user_session_path, class: "header__nav__btn" %>
+  </div>
+</header>
