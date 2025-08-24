@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="inner">
+    <%# すべてのプロトタイプを表示するエリアです。 %>
+    <div class="prototype__wrapper">
+      <%# ここで、controllers/prototypes_controller.rb の index アクションで定義した @prototypes を使って、 %>
+      <%# 各プロトタイプを _prototype.html.erb というひな形（部分テンプレート）を使って表示します。 %>
+      <%# collection: @prototypes と書くことで、@prototypesに入っているデータ一つ一つに対して、 %>
+      <%# 自動的に_prototype.html.erbが呼び出されて表示されます。 %>
+      <%= render partial: "prototype", collection: @prototypes %>
+    </div>
+  </div>
+</div>
