@@ -67,7 +67,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_08_15_044614) do
     t.datetime "remember_created_at"
     t.string "username"
     t.text "profile"
-    t.string "department"
+    t.string "occupation"
     t.string "position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
